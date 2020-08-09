@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.TaskFragment"
+    android:background="#3E546F"
+    android:id="@+id/stats_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgMenu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="17dp"
+                android:src="@drawable/ic_menu"
+                android:tint="@android:color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="136dp"
+                android:fontFamily="sans-serif-light"
+                android:text="STATISTICS"
+                android:textColor="@color/lightWhite"
+                android:textSize="30dp" />
+
+            <CalendarView
+                android:id="@+id/calendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="395dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="109dp"
+                android:layout_marginRight="-3dp"
+                android:dateTextAppearance="@style/CalenderViewDateCustomText"
+                android:theme="@style/CalenderViewCustom"
+                android:weekDayTextAppearance="@style/CalenderViewWeekCustomText" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#1F3E62"
+            android:elevation="3dp">
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="41dp"
+                android:layout_marginTop="33dp"
+                android:fontFamily="sans-serif-black"
+                android:text="AUG 14, 2020"
+                android:textColor="@color/lightWhite"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="3dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="75dp"
+                android:background="@color/lightWhite" />
+
+            <TextView
+                android:id="@+id/txtTaskCompleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="124dp"
+                android:fontFamily="sans-serif-black"
+                android:text="0"
+                android:textColor="@color/lightWhite"
+                android:textSize="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="185dp"
+                android:fontFamily="sans-serif-light"
+                android:text="TASK COMPLETED"
+                android:textColor="@color/lightWhite"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txtMinutesCompleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="278dp"
+                android:layout_marginTop="124dp"
+                android:fontFamily="sans-serif-black"
+                android:text="0"
+                android:textColor="@color/lightWhite"
+                android:textSize="40dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="277dp"
+                android:layout_marginTop="185dp"
+                android:fontFamily="sans-serif-light"
+                android:text="MINUTES SPENT"
+                android:textColor="@color/lightWhite"
+                android:textSize="15dp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

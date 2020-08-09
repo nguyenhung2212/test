@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_task"
+            android:title="Task"
+            android:icon="@drawable/ic_task"
+            />
+        <item
+            android:id="@+id/nav_Stats"
+            android:title="Stats"
+            android:icon="@drawable/ic_stats"/>
+        <item
+            android:id="@+id/nav_badges"
+            android:title="Badges"
+            android:icon="@drawable/ic_badges"/>
+        <item
+            android:id="@+id/nav_plants"
+            android:title="Plants"
+            android:icon="@drawable/ic_plants"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Setting"
+            android:icon="@drawable/ic_setting"/>
+    </group>
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_login"
+                    android:title="Login"
+                    android:icon="@drawable/ic_profile"/>
+                <item
+                    android:id="@+id/nav_profile"
+                    android:title="Profile"
+                    android:icon="@drawable/ic_profile"/>
+                <item
+                    android:id="@+id/nav_all_logout"
+                    android:title="Logout"
+                    android:icon="@drawable/ic_logout"/>
+
+            </group>
+        </menu>
+    </item>
+</menu>
